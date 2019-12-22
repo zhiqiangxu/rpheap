@@ -13,6 +13,11 @@ type Heap struct {
 	size int
 }
 
+// New is ctor for Heap
+func New() *Heap {
+	return &Heap{}
+}
+
 type heapInterface interface {
 	Insert(val int64)
 	FindMin() int64
